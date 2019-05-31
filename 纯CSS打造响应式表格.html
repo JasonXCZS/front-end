@@ -5,12 +5,17 @@
 		<title>纯CSS打造响应式表格</title>
 		<style type="text/css">
 			*{
+				/* box-sizing:定义了 user agent 应该如何计算一个元素的总宽度和总高度
+				 content-box:默认值，标准盒子模型。width 与 height 只包括内容的宽和高， 不包括边框（border），内边距（padding），外边距（margin）
+				 border-box: width 和 height 属性包括内容，内边距和边框，但不包括外边距
+				 --引自MDN*/
 				box-sizing: border-box;
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
 			}
 			body{
 				font-family: helvetica;
+				/* Webkit 实现的属性字体平滑 这个属性仅在 Mac OS X/macOS 下生效 --引自MDN */
 				-webkit-font-smoothing: antialiased;
 				background: rgba(224, 16, 16, 0.48);
 			}
@@ -73,7 +78,7 @@
 					font-size: 11px;
 					color: white;
 					padding: 0 0 10px;
-				}
+				} 
 				.fl-table thead, .fl-table tbody, .fl-table thead th {
 					display: block;
 				}
@@ -127,7 +132,7 @@
 		</style>
 	</head>
 	<body>
-		<h2>项目参考前端大佬<q>html5tricks</q>作品<a href="https://www.html5tricks.com/css-responsive-table.html" target="_blank">点击膜拜</a></h2>
+		<h2>项目参考前端大佬<q>html5tricks</q>作品<a href="https://www.html5tricks.com/demo/css-responsive-table/index.html" target="_blank">点击膜拜</a></h2>
 		<h2>改变浏览器窗体大小查看效果</h2>
 		<div class="table-wrapper">
 			<table class="fl-table">
